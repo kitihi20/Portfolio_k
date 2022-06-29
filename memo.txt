@@ -6,11 +6,13 @@ memo
   Socketを使用したUnityとC製鯖の通信
 3.欠けた世界、駆ける
   軽量化、自作Shaderのテスト
-4.NoNameMech
+4.~からの脱出
+  唯一ゲームとして完成させている作品。軽量化
+5.NoNameMech
   組み替えできるロボ、大量の敵の処理
-5.NonameMechv2
+6.NonameMechv2
   NoNameMechの上位互換、自作セーブシステム
-6.Voidgazer
+7.Voidgazer
   大量の敵
 
 

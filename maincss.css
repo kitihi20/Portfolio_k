@@ -1,0 +1,178 @@
+body{
+    font-family: "Century Gothic",Yu Gothic, Arial;
+    margin: 0px;
+    color: #dddddd;
+}
+/*ヘッダー*/
+header {
+    position: fixed;
+    background-color: #111111ee;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+    border-bottom: solid 5px white ;
+}
+header > h1
+{
+    margin: 0px;
+}
+#headertxt{
+    position: relative;
+    font-size: 30px;
+    bottom: -10px;
+}
+/*ヘッダーのボタン(ハンバーガーボタン)*/
+#hbbutton{
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    right: 8px;
+    top: 7px;
+    background-color: #00000000;
+    border: solid 2px #000000ff;
+}
+#hbbutton:hover{
+    border: solid 2px #ffffff33;
+    transition: all 0.3s 0s ease;
+}
+.hbline{
+    position: absolute;
+    right: 0%;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+}
+#headermain.op #hbline1{
+    transform: translate(0px,-7px);
+    background-color: #00000000;
+    transition: all 0.3s 0s ease;
+}
+#headermain.op #hbline3{
+    transform: translate(0px,7px);
+    background-color: #00000000;
+    transition: all 0.3s 0s ease;
+}
+#headermain.op #hbline2_1{
+    transform: rotate(135deg);
+    transition: all 0.3s 0s ease;
+}
+#headermain.op #hbline2_2{
+    transform: rotate(225deg);
+    transition: all 0.3s 0s ease;
+}
+#headermain.cl #hbline1{
+    transform: translate(0px,0px);
+    transition: all 0.3s 0s ease;
+}
+#headermain.cl #hbline3{
+    transform: translate(0px,0px);
+    transition: all 0.3s 0s ease;
+}
+#headermain.cl #hbline2_1{
+    transform: rotate(0deg);
+    transition: all 0.3s 0s ease;
+}
+#headermain.cl #hbline2_2{
+    transform: rotate(0deg);
+    transition: all 0.3s 0s ease;
+}
+#hbline1{
+    top: 20%
+}
+#hbline2_1{
+    top: 50%;
+}
+#hbline2_2{
+    top: 50%;
+}
+#hbline3{
+    top: 80%;
+}
+
+/*main*/
+main{
+    margin: 0px;
+    padding: 48px 8px 8px 8px;
+    background-color: #10101a;
+}
+.contentbutton{
+    border: none;
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+
+/*ハンバーガーメニュー*/
+#hmenu{
+    position: fixed;
+    right: -470px;
+    top: 50px;
+    width: 470px;
+    height: 100%;
+    background-color: #222222ee;
+}
+#headermain.op #hmenu{
+    transform: translate(-470px,0px);
+    transition: transform .3s; 
+}
+#headermain.cl #hmenu{
+    transform: translate(0px,0px);
+    transition: transform .3s; 
+}
+/*メニューの中身*/
+.hmenubox{
+    position: relative;
+    margin: 4px 8px 4px 8px;
+    width: 95%;
+    height: 45px;
+    right: 0%;
+    background-color: #00000000;
+    border: solid 3px #000000ff;
+    color: #eeeeee;
+    text-align: right;
+    vertical-align:bottom;
+    font-size: 28px;
+}
+.hmenubox:hover{
+    border: solid 3px #ffffff33;
+    transition: all 0.3s 0s ease;
+}
+
+@media screen and (max-width:480px){
+    /*ハンバーガーメニュー*/
+    #hmenu{
+        position: fixed;
+        right: -100%;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        background-color: #222222ee;
+    }
+    #headermain.op #hmenu{
+        transform: translate(-100%,0px);
+        transition: transform .3s; 
+    }
+    #headermain.cl #hmenu{
+        transform: translate(0px,0px);
+        transition: transform .3s; 
+    }
+}
+
+/*揺らす*/
+
+#headermain.cl .shake:hover{
+    animation: shake 0.1s infinite;
+}
+@keyframes shake {
+    0% {
+        transform: rotate(5deg) ;
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
