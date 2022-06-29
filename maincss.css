@@ -2,6 +2,7 @@ body{
     font-family: "Century Gothic",Yu Gothic, Arial;
     margin: 0px;
     color: #dddddd;
+    background-color: #000000ff;
 }
 /*ヘッダー*/
 header {
