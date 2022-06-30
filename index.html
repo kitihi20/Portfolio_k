@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" standardized-themed-scrollbar>
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>portfolio_k</title>
     <link rel="stylesheet" type="text/css" href="./maincss.css">
+    <link rel="shortcut icon" href="./images/AS-MadeIconProt_small.png">
     <script src="./mainjs.js"></script>
   </head>
 
-  <body>
-
-    <header id="headermain">
-      <button id="hbbutton" onclick="ClickHB()">
-        <span class="hbline" id="hbline1"></span>
-        <span class="hbline" id="hbline2_1"></span>
-        <span class="hbline" id="hbline2_2"></span>
-        <span class="hbline " id="hbline3"></span>
-      </button>
-      <span id="hmenu">
-        <button class="hmenubox" onclick="location.href='./index.html'">Home</button>
-        <button class="hmenubox" onclick="location.href='./index.html'">Home</button>
-      </span>
-      <span id="headertxt">
-        Portfolio_k
-      </span>
-    </header>
-
+  <body id="bd">
     <main>
+      <button class="contentbutton">
+        <img class="contentimg" src="./images/LW_small.png" width="100%">
+        <p class="contenttxtL">NonameMech v2</p>
+      </button>
+
+      <button class="contentbutton">
+        <img class="contentimg" src="./images/LW_small.png" width="100%">
+        <p class="contenttxtR">Voidgazer</p>
+      </button>
+
+      <button class="contentbutton">
+        <img class="contentimg" src="./images/LW_small.png" width="100%">
+        <p class="contenttxtL">~からの脱出</p>
+      </button>
+
+      <button class="contentbutton">
+        <img class="contentimg" src="./images/LW_small.png" width="100%">
+        <p class="contenttxtR">欠けた世界、駆ける</p>
+      </button>
+
+      <button class="contentbutton">
+        <img class="contentimg" src="./images/T8UP-INIAD_sam_small.png" a width="100%">
+        <p class="contenttxtL">オンラインゲーム擬き</p>
+      </button>
       <p>test</p>
-      <h1>none</h1>
-      <h1>none</h1>
-      <h1>none</h1>
-      <button class="contentbutton"><img src="./images/LW_small.png" title="lunarwing" width="100%"></button>
     </main>
 
+    <header id="headermain">
+
+    </header>
+
   </body>
+  <script type="text/javascript">
+    LoadHeader("./");
+  </script>
 </html>

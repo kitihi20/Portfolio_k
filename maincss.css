@@ -2,26 +2,45 @@ body{
     font-family: "Century Gothic",Yu Gothic, Arial;
     margin: 0px;
     color: #dddddd;
-    background-color: #000000ff;
+    background-color: #10101a;
 }
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+    /*background-image: linear-gradient(180deg, #222222 0%, #999999 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);*/
+    background-color: #555555;
+    border-radius: 100px;
+}
+p{
+    font-family: "Century Gothic",Yu Gothic, Arial;
+}
+h1{
+    font-family: "Century Gothic",Yu Gothic, Arial;
+    margin: 8px 5px 8px 5px;
+    font-weight: 100;
+}
+
 /*ヘッダー*/
 header {
     position: fixed;
     background-color: #111111ee;
+    top: 0%;
     width: 100%;
     height: 50px;
     margin: 0px;
     padding: 0px 0px 0px 8px;
-    border-bottom: solid 5px white ;
+    border-bottom: solid 2px white ;
 }
 header > h1
 {
     margin: 0px;
 }
 #headertxt{
-    position: relative;
+    position: fixed;
     font-size: 30px;
-    bottom: -10px;
+    top: 5px;
 }
 /*ヘッダーのボタン(ハンバーガーボタン)*/
 #hbbutton{
@@ -99,20 +118,65 @@ main{
 }
 .contentbutton{
     border: none;
+    /*border: dashed 3px white;*/
     padding: 0px;
-    height: 50px;
     width: 100%;
+    height: 100px;
+    background-color: #000000ff;
+    overflow: hidden;
+    transition: all 0.3s 0s ease;
 }
-
+.contentbutton:hover{
+    height: 300px;
+    border: solid 5px #ffffff33;
+    transition: all 0.3s 0s ease;
+}
+.contentimg{
+    object-fit:cover;
+    position: relative;
+    /*width: 100%;*/
+    height: 100%;
+}
+.contenttxtL{
+    position: relative;
+    top: -100%;
+    width: 100%;
+    margin: 0px 0px 0px 15px;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+}
+.contenttxtR{
+    position: relative;
+    top: -100%;
+    width: 98%;
+    margin: 0px;
+    font-size: 30px;
+    color: white;
+    text-align: right;
+}
 
 /*ハンバーガーメニュー*/
 #hmenu{
     position: fixed;
     right: -470px;
     top: 50px;
+    bottom: 0%;
     width: 470px;
-    height: 100%;
+    /*height: 90%;*/
     background-color: #222222ee;
+    overflow-y: auto; 
+    /*-ms-overflow-style:none;/* IE,Edge*/
+    /*scrollbar-width: none;/* Firefox*/
+}
+#hmenu::-webkit-scrollbar {
+    width: 5px;
+}
+#hmenu::-webkit-scrollbar-thumb {
+    /*background-image: linear-gradient(180deg, #222222 0%, #999999 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);*/
+    background-color: #555555;
+    border-radius: 100px;
 }
 #headermain.op #hmenu{
     transform: translate(-470px,0px);
@@ -135,6 +199,7 @@ main{
     text-align: right;
     vertical-align:bottom;
     font-size: 28px;
+    white-space: nowrap;
 }
 .hmenubox:hover{
     border: solid 3px #ffffff33;
@@ -148,7 +213,7 @@ main{
         right: -100%;
         top: 50px;
         width: 100%;
-        height: 100%;
+        bottom: 0%;
         background-color: #222222ee;
     }
     #headermain.op #hmenu{

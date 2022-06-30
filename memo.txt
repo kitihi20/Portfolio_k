@@ -1,18 +1,14 @@
 memo
 
-1.大体INIAD
-  大まかなマップと写真から3Dモデルで再現
-2.オンラインゲーム擬き
+1.オンラインゲーム擬き+INIAD
   Socketを使用したUnityとC製鯖の通信
-3.欠けた世界、駆ける
+2.欠けた世界、駆ける
   軽量化、自作Shaderのテスト
-4.~からの脱出
+3.~からの脱出
   唯一ゲームとして完成させている作品。軽量化
-5.NoNameMech
-  組み替えできるロボ、大量の敵の処理
-6.NonameMechv2
+4.NonameMechv2
   NoNameMechの上位互換、自作セーブシステム
-7.Voidgazer
+5.Voidgazer
   大量の敵
 
 
