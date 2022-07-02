@@ -5,7 +5,10 @@ body{
     background-color: #10101a;
 }
 body::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #222222;
 }
 body::-webkit-scrollbar-thumb {
     /*background-image: linear-gradient(180deg, #222222 0%, #999999 99%);
@@ -13,13 +16,32 @@ body::-webkit-scrollbar-thumb {
     background-color: #555555;
     border-radius: 100px;
 }
-p{
-    font-family: "Century Gothic",Yu Gothic, Arial;
-}
 h1{
-    font-family: "Century Gothic",Yu Gothic, Arial;
     margin: 8px 5px 8px 5px;
     font-weight: 100;
+}
+P{
+    margin: 0px;
+}
+.none{
+    margin: 0px;
+    padding: 0px;
+    background-color: #00000000;
+    /*border: none;*/
+}
+.blborder{
+    border: solid 3px #000000ff;
+    transition: all 0.2s 0s ease;
+}
+.blborder:hover{
+    border: solid 3px #ffffff33;
+    transition: all 0.3s 0s ease;
+}
+.Nf{
+    font-family: Yu Gothic, Arial;
+}
+.CGf{
+    font-family: "Century Gothic",Yu Gothic, Arial;
 }
 
 /*ヘッダー*/
@@ -31,16 +53,17 @@ header {
     height: 50px;
     margin: 0px;
     padding: 0px 0px 0px 8px;
-    border-bottom: solid 2px white ;
+    border-bottom: solid 1px white ;
 }
 header > h1
 {
     margin: 0px;
 }
 #headertxt{
-    position: fixed;
+    display:inline-block;
+    vertical-align: super;
+    color: #dddddd;
     font-size: 30px;
-    top: 5px;
 }
 /*ヘッダーのボタン(ハンバーガーボタン)*/
 #hbbutton{
@@ -50,12 +73,8 @@ header > h1
     right: 8px;
     top: 7px;
     background-color: #00000000;
-    border: solid 2px #000000ff;
 }
-#hbbutton:hover{
-    border: solid 2px #ffffff33;
-    transition: all 0.3s 0s ease;
-}
+
 .hbline{
     position: absolute;
     right: 0%;
@@ -116,9 +135,17 @@ main{
     padding: 48px 8px 8px 8px;
     background-color: #10101a;
 }
-.contentbutton{
+.contentot{
     border: none;
     /*border: dashed 3px white;*/
+    margin: 13px 0px 8px 0px;
+    left: 8px;
+    right: 8px;
+    height: 300px;
+    background-color: #000000ff;
+    overflow: hidden;
+}
+.contentbutton{
     padding: 0px;
     width: 100%;
     height: 100px;
@@ -128,32 +155,37 @@ main{
 }
 .contentbutton:hover{
     height: 300px;
-    border: solid 5px #ffffff33;
     transition: all 0.3s 0s ease;
 }
 .contentimg{
     object-fit:cover;
     position: relative;
-    /*width: 100%;*/
+    width: 100%;
     height: 100%;
 }
 .contenttxtL{
     position: relative;
     top: -100%;
-    width: 100%;
-    margin: 0px 0px 0px 15px;
+    margin: 4px;
     font-size: 30px;
-    color: white;
+    color: #ffffff;
     text-align: left;
+}
+.contenttxtL span{
+    background-color: #00000066;
+    padding: 0px 8px 0px 8px;
 }
 .contenttxtR{
     position: relative;
     top: -100%;
-    width: 98%;
-    margin: 0px;
+    margin: 4px;
     font-size: 30px;
-    color: white;
+    color: #ffffff;
     text-align: right;
+}
+.contenttxtR span{
+    background-color: #00000066;
+    padding: 0px 8px 0px 8px;
 }
 
 /*ハンバーガーメニュー*/
@@ -170,7 +202,10 @@ main{
     /*scrollbar-width: none;/* Firefox*/
 }
 #hmenu::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
+}
+#hmenu::-webkit-scrollbar-track {
+    background-color: #333333;
 }
 #hmenu::-webkit-scrollbar-thumb {
     /*background-image: linear-gradient(180deg, #222222 0%, #999999 99%);
@@ -194,16 +229,11 @@ main{
     height: 45px;
     right: 0%;
     background-color: #00000000;
-    border: solid 3px #000000ff;
     color: #eeeeee;
     text-align: right;
     vertical-align:bottom;
     font-size: 28px;
     white-space: nowrap;
-}
-.hmenubox:hover{
-    border: solid 3px #ffffff33;
-    transition: all 0.3s 0s ease;
 }
 
 @media screen and (max-width:480px){
@@ -224,21 +254,14 @@ main{
         transform: translate(0px,0px);
         transition: transform .3s; 
     }
-}
-
-/*揺らす*/
-
-#headermain.cl .shake:hover{
-    animation: shake 0.1s infinite;
-}
-@keyframes shake {
-    0% {
-        transform: rotate(5deg) ;
-    }
-    50% {
-        transform: rotate(-5deg);
-    }
-    100% {
-        transform: rotate(5deg);
+    .contentot{
+        border: none;
+        /*border: dashed 3px white;*/
+        margin: 13px 0px 8px 0px;
+        left: 8px;
+        right: 8px;
+        height: 150px;
+        background-color: #000000ff;
+        overflow: hidden;
     }
 }
