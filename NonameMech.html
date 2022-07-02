@@ -13,13 +13,63 @@
   <body id="bd">
     <main>
       <div class="contentot">
-        <img class="contentimg" src="./images/LW_small.png">
+        <img class="contentimg" src="./images/NnM_t.jpg" width="100%">
         <p class="contenttxtL"><span>NonameMech v2</span></p>
       </div>
       <div class="Nf">
-        <p>個人制作</p>
-        <p>制作時期:</p>
-        <p>制作時間:</p>
+        <p>課題制作、個人</p>
+        <p>制作時期:2021年11月22日</p>
+        <p>制作時間:46日</p>
+        <h3>概要</h3>
+        <p>Unityで制作した3Dカスタムロボットアクションゲーム。<p>
+        <p>ロボットの各所にあるジョイントにパーツを付けてカスタマイズすることで性能と見た目を変えることができる。</p>
+        <p>極めて短時間で作ったため、アクション面が土台部分しかない。</p>
+        <div class="hiddenOV">
+          <img src="./images/NnM_a.jpg" class="otimg">
+          <img src="./images/NnM_b.jpg" class="otimg">
+        </div>
+        <h3>作成目的</h3>
+        <ul>
+          <li>
+            <p>パーツを組み合わせてカスタマイズできる機能の実装。</p>
+            <p>このゲームの根幹となる機能。</p>
+            <p>ロボット以外のものにも使用できるため、他のゲームにも再利用できる。</p>
+          </li>
+          <li>
+            <p>マテリアルを変更せずに色、質感を変更できるようにする仕組みの実装。<p>
+            <p>マテリアルを増やしすぎるとパフォーマンスが落ちるため、その対策の一つ。</p>
+            <p>メッシュの頂点カラーを使用することで実現。</p>
+            <p>しかし、そのためにメッシュを分割しないと綺麗に色分けができず、メッシュが大幅に増えてしまった。</p>
+          </li>
+          <li>
+            <p>小さなセーブデータの実装。</p>
+            <p>パーツを大量に設置するため、json形式のようなデータでは容量が大きくなってしまう。</p>
+            <p>データの数値のみをバイト列で保存することでかなり容量を削減できる。</p>
+            <p>パーツに必要なデータを決定、範囲を絞ることでさらに少ないバイト数にできた。</p>
+          </li>
+        </ul>
+        <h3>参考にしたゲーム</h3>
+        <ul>
+          <li>
+              <p>BreakArtsシリーズ</p>
+              <p>カスタマイズ要素、ロボットのデザイン</P>
+          </li>
+          <li>
+              <p>Armored Coreシリーズ 4 ~ VD</p>
+              <p>アクション要素</p>
+          </li>
+        </ul>
+        <h3>使用した素材</h3>
+        <ul>
+          <li>Color Picker Triangle:
+              https://assetstore.unity.com
+              /packages/tools/gui/color-picker-triangle-91518</li>
+          <li>テクスチャ: https://www.textures.com/</li>
+          <li>UnitymのURP環境にて追加されるアセット</li>
+          <li>Animation Rigging</li>
+          <li>水のNormalmap</li>
+        </ul>
+        
       </div>
     </main>
 
