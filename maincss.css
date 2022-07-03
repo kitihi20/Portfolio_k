@@ -1,3 +1,9 @@
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+    /*box-sizing : border-box;*/
+    /*overscroll-behavior: none;*/
+}
 body{
     font-family: "Century Gothic",Yu Gothic, Arial;
     margin: 0px;
@@ -217,6 +223,7 @@ main{
     /*height: 90%;*/
     background-color: #222222ee;
     overflow-y: auto;
+    overflow-x: hidden;
     border-left: solid 2px white;
     /*-ms-overflow-style:none;/* IE,Edge*/
     /*scrollbar-width: none;/* Firefox*/

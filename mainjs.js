@@ -10,21 +10,23 @@ function LoadHeader(rootdir)
       <span class="hbline" id="hbline2_2"></span>
       <span class="hbline " id="hbline3"></span>
     </button>
-    <button class="none blborder" onclick="location.href='./index.html'">
+    <a href="./index.html">
+    <button class="none blborder">
       <img src="./images/AS-MadeIconProt_small.png" width="40px">
       <span id="headertxt" class="CGf">
         Portfolio_k
       </span>
     </button>
+    </a>
     <div id="hmenu">
-      <button class="hmenubox blborder" onclick="location.href='./index.html'">Home</button>
-      <button class="hmenubox blborder" onclick="location.href='./index.html'">About</button>
+      <a href="./index.html"><button class="hmenubox blborder">Home</button></a>
+      <a href="./About.html"><button class="hmenubox blborder">About</button></a>
       <h1>Works</h1>
-      <button class="hmenubox blborder" onclick="location.href='./NonameMech.html'">NonameMech v2</button>
-      <button class="hmenubox blborder" onclick="location.href='./index.html'">VOIDLASE</button>
-      <button class="hmenubox blborder" onclick="location.href='./index.html'">~からの脱出</button>
-      <button class="hmenubox blborder" onclick="location.href='./index.html'">欠けた世界、駆ける</button>
-      <button class="hmenubox blborder" onclick="location.href='./index.html'">オンラインゲーム擬き</button>
+      <a href="./NonameMech.html"><button class="hmenubox blborder">NonameMech v2</button></a>
+      <a href="./Voidlase.html"><button class="hmenubox blborder">VOIDLASE</button></a>
+      <a href="./Escape.html"><button class="hmenubox blborder">〜からの脱出</button></a>
+      <a href="./Crack.html"><button class="hmenubox blborder">欠けた世界、駆ける</button></a>
+      <a href="./Onlinelike.html"><button class="hmenubox blborder">オンラインゲーム擬き</button></a>
     </div>
     `;
 }
