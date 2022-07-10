@@ -1,3 +1,6 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
 html{
     max-width: 100%;
     overflow-x: hidden;
@@ -50,6 +53,7 @@ p{
 hr{
     border: none;
     border-top: 2px solid #ffffff;
+    margin: 6px 0px 6px 0px;
 }
 .none{
     margin: 0px;
@@ -73,8 +77,12 @@ hr{
     border: solid 3px #ffffff44;
     transition: all 0.3s 0s ease;
 }
+.bottomborder{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+}
 .Nf{
-    font-family: Yu Gothic, Arial;
+    font-family: "Zen Kaku Gothic Antique",Yu Gothic, Arial;
 }
 .CGf{
     font-family: "Century Gothic",Yu Gothic, Arial;
