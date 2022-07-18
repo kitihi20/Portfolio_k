@@ -14,7 +14,7 @@ function LoadHeader(rootdir)
     <button class="none blborder">
       <img src="./images/AS-MadeIconProt_small.png" width="40px">
       <span id="headertxt" class="CGf">
-        Portfolio_k
+        kitihi20
       </span>
     </button>
     </a>
