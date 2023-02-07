@@ -1,6 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap');
 
 html{
     max-width: 100%;
@@ -54,7 +55,12 @@ p{
 hr{
     border: none;
     border-top: 2px solid #ffffff;
-    margin: 6px 0px 6px 0px;
+    margin: 9px 8px 11px 8px;
+}
+hr.clear{
+    border: none;
+    border-top: 4px solid #00000000;
+    margin: 9px 12px 11px 12px;
 }
 .none{
     margin: 0px;
@@ -89,8 +95,30 @@ hr{
 .CGf{
     font-family: "Century Gothic",Yu Gothic, Arial;
 }
+.NS{
+    font-family: 'Noto Serif JP', serif;
+}
 .txtbox{
     padding: 0px 0px 0px 12px;
+}
+.shadow{
+    filter: drop-shadow(2px 2px 0px #000000ff);
+}
+.bigfont{
+    font-size: 40px;
+}
+.midiumfont{
+    font-size: 20px;
+}
+.smallfont{
+    font-size: 10px;
+}
+.video{
+    width: 500px;
+}
+.youtube{
+    width: 500px;
+    height: 280px;
 }
 
 /*ヘッダー*/
@@ -103,6 +131,7 @@ header {
     margin: 0px;
     padding: 0px 0px 0px 8px;
     border-bottom: solid 2px white ;
+    z-index:100;
 }
 header > h1
 {
@@ -184,6 +213,11 @@ main{
     padding: 48px 8px 8px 8px;
     background-color: #10101a;
 }
+main.clear{
+    margin: 0px;
+    padding: 48px 8px 8px 8px;
+    background-color: #00000000;
+}
 .contentot{
     border: none;
     /*border: dashed 3px white;*/
@@ -218,6 +252,9 @@ main{
 .R{
     text-align: right;
 }
+.C{
+    text-align: center;
+}
 .T{
     vertical-align: top;
 }
@@ -234,6 +271,9 @@ main{
 .contenttxt span{
     background-color: #00000066;
     padding: 0px 8px 0px 8px;
+}
+.inline{
+    display:inline-block
 }
 
 /*ハンバーガーメニュー*/
@@ -286,6 +326,26 @@ main{
     white-space: nowrap;
 }
 
+.backimage{
+    position: fixed;
+    z-index: -10;
+    background-image: url(./test_img.jpg);
+    background-size:  cover;
+}
+
+@media screen and (max-width:375px){
+    .bigfont{
+        font-size: 20px;
+    }
+    .midiumfont{
+        font-size: 13px;
+    }
+    .smallfont{
+        font-size: 7px;
+    }
+    
+}
+/*スマートフォン(小さめ)ぐらい*/
 @media screen and (max-width:480px){
     /*ハンバーガーメニュー*/
     #hmenu{
@@ -327,7 +387,25 @@ main{
         height: 180px;
         transition: none;
     }
+    .bigfont{
+        font-size: 20px;
+    }
+    .midiumfont{
+        font-size: 17px;
+    }
+    .smallfont{
+        font-size: 8px;
+    }
+    .video{
+        width: 80%;
+    }
+    .youtube{
+        width: 80%;
+        height: 280px;
+    }
+    
 }
+/*タブレット端末ぐらい*/
 @media screen and (min-width:700px){
     .otimg{
         width:560px;
@@ -355,7 +433,18 @@ main{
         height: 400px;
         transition: all 0.3s 0s ease;
     }
+    .bigfont{
+        font-size: 50px;
+    }
+    .midiumfont{
+        font-size: 30px;
+    }
+    .smallfont{
+        font-size: 15px;
+    }
 }
+
+/*ノートパソコンぐらい*/
 @media screen and (min-width:1000px){
     .contentot{
         border: none;
@@ -385,5 +474,59 @@ main{
         margin: 4px;
         font-size: 45px;
         color: #ffffff;
+    }
+    .bigfont{
+        font-size: 65px;
+    }
+    .midiumfont{
+        font-size: 35px;
+    }
+    .smallfont{
+        font-size: 18px;
+    }
+    .video{
+        width: 600px;
+    }
+    .youtube{
+        width: 600px;
+        height: 340px;
+    }
+}
+/*デスクトップパソコンぐらい*/
+@media screen and (min-width:1440px){
+    .bigfont{
+        font-size: 90px;
+    }
+    .midiumfont{
+        font-size: 60px;
+    }
+    .smallfont{
+        font-size: 30px;
+    }
+    .video{
+        width: 800px;
+    }
+    .youtube{
+        width: 800px;
+        height: 450px;
+    }
+}
+/*4Kぐらい*/
+@media screen and (min-width:2000px){
+    .bigfont{
+        font-size: 130px;
+    }
+    .midiumfont{
+        font-size: 100px;
+    }
+    .smallfont{
+        font-size: 50px;
+    }
+    .video{
+        width: 900px;
+    }
+    .youtube{
+        width: 900px;
+        height: 500px;
     }
 }

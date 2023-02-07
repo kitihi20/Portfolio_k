@@ -19,17 +19,23 @@ function LoadHeader(rootdir)
     </button>
     </a>
     <div id="hmenu">
+      <hr class="clear">
       <a href="./index.html"><button class="hmenubox blborder">Home</button></a>
       <a href="./About.html"><button class="hmenubox blborder">About</button></a>
+      <hr class="clear">
+      
       <h1>Works</h1>
-      <a href="./GTMech3.html"><button class="hmenubox blborder">GravityTechnologyMech v3.0(仮)</button></a>
+      
       <a href="./Voidlase.html"><button class="hmenubox blborder">VOIDLASE</button></a>
+      <hr class="clear">
+      <a href="./GTMech3.html"><button class="hmenubox blborder">GravityTechnologyMech v3.0(仮)</button></a>
       <a href="./NonameMech.html"><button class="hmenubox blborder">NonameMech v2</button></a>
       <a href="./AnomalyCorrector.html"><button class="hmenubox blborder">AnomalyCorrector</button></a>
       <a href="./Escape.html"><button class="hmenubox blborder">〜からの脱出</button></a>
       <a href="./Crack.html"><button class="hmenubox blborder">欠けた世界、駆ける</button></a>
-      <a href="./Onlinelike.html"><button class="hmenubox blborder">オンラインゲーム擬き</button></a>
       <a href="./Other.html"><button class="hmenubox blborder">その他</button></a>
+      
+      <hr class="clear">
     </div>
     `;
 }
