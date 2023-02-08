@@ -60,6 +60,13 @@
     padding: 16px;
 }
 
+.VLTitle{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 22px;
+    margin: 2px 5px 2px 5px;
+    padding: 2px 5px 2px 5px;
+}
+
 
 @media screen and (max-width:480px){
     .VLUIFrame{
