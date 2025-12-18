@@ -1,90 +1,57 @@
 <!DOCTYPE html>
-<html lang="ja" standardized-themed-scrollbar>
+<html lang="ja" standardized-themed-scrollbar style="height: 100%;">
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>kitihi20_works</title>
-    <link rel="stylesheet" type="text/css" href="./maincss.css">
-    <link rel="shortcut icon" href="./images/AS-MadeIconProt_fab.png">
-    <script src="./mainjs.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/variables.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="shortcut icon" href="/images/AS-MadeIconProt_fab.ico">
   </head>
 
-  <body id="bd">
-    <main>
-        
-      <br>
-      
-      <a href="./Voidlase.html">
-        <button class="contentbutton blborder">
-          <img class="contentimg" src="./images/VOIDLASE_TImg.jpg" width="100%">
-        </button>
-      </a>
-      
-      <hr>
-      <hr>
+  <body id="body" style="margin: 0px; height: 100%; background-color: var(--Background_Color);">
 
-      <a href="./Escape.html">
-      <button class="contentbutton blborder">
-        <img class="contentimg" src="./images/Eo__iemel.jpg" width="100%">
-        <p class="contenttxt L CGf"><span>〜からの脱出</span></p>
+    <header id="headermain"></header>
+
+    <div style="width: 100%; height: var(--HeaderHeight);"></div>
+
+    <a href="/html/N2M4.html">
+      <button class="worksButton">
+        <img class="worksImage imageMove_L" src="./images/N2M4/NoNameMech_NoTexts.jpg" width="110%">
+        <img class="worksImageTitle_L" src="./images/N2M4/NoNameMech_TitleTexts_DarkBG.webp" width="70%">
       </button>
-      </a>
+    </a>
 
-      <a href="./AnomalyCorrector.html">
-        <button class="contentbutton blborder">
-          <img class="contentimg" src="./images/AO_t.jpg" width="100%">
-          <p class="contenttxt R CGf"><span>AnomalyCorrector</span></p>
-        </button>
-        </a>
-
-      <a href="./Crack.html">
-      <button class="contentbutton blborder">
-        <img class="contentimg" src="./images/CW_t.jpg" width="100%">
-        <p class="contenttxt L CGf"><span>欠けた世界、駆ける</span></p>
+    <a href="/html/Voidlase.html">
+      <button class="worksButton">
+        <img class="worksImage imageMove_R" src="./images/Voidlase/VOIDLASE_C_NoTexts.jpg" width="110%">
+        <img class="worksImageTitle_R" src="./images/Voidlase/VOIDLASE_Logo.webp" width="50%" style="right: 5%;">
       </button>
-      </a>
+    </a>
 
-      <a href="./GTMech3.html">
-        <button class="contentbutton blborder">
-          <img class="contentimg" src="./images/GTM3_t.jpg" width="100%">
-          <div class="contenttxt R CGf"><span>GravityTechnologyMech v3.0(仮)</span></div>
-        </button>
-        </a>
-      
-      <a href="./NonameMech.html">
-      <button class="contentbutton blborder">
-        <img class="contentimg" src="./images/NnM_t.jpg" width="100%">
-        <div class="contenttxt L CGf"><span>NonameMech v2</span></div>
+    <hr>
+
+    <a href="/html/Works.html">
+      <button class="worksButton">
+        <img class="worksImage imageMove_L" src="./images/Other/CW_t.jpg" width="110%">
+        <h1 class="worksImageTitle_L">&nbsp;&nbsp;作品一覧</h1>
       </button>
-      </a>
+    </a>
 
-      <hr>
-      
-      <a href="./Other.html">
-      <button class="contentbutton blborder" >
-        <img class="contentimg" src="./images/LW_small.jpg" a width="100%">
-        <p class="contenttxt R CGf"><span>その他</span></p>
+    <a href="/html/Other.html">
+      <button class="worksButton">
+        <img class="worksImage imageMove_R" src="./images/Other/ShaderTest.jpg" width="110%">
+        <h1 class="worksImageTitle_R">その他&nbsp;&nbsp;&nbsp;</h1>
       </button>
-      </a>
-      
-      <hr>
-      
-      <a href="./About.html">
-      <button class="contentbutton blborder">
-        <img class="contentimg" src="./images/GTM0.jpg" width="100%">
-        <div class="contenttxt L CGf"><span>About</span></div>
-      </button>
-      </a>
-      
-    </main>
-
-    <header id="headermain">
-
-    </header>
+    </a>
 
   </body>
-  <script type="text/javascript">
-    LoadHeader("./");
-  </script>
+
+
+
+  <script src="/js/hamburger.js"></script>
+
 </html>
